@@ -157,10 +157,7 @@
   Password: 1
   ```
 
-  <h4>
-    <a href="https://wmsonline.ikeyly.com">Demo</a>
-  </h4> 
-
+ 
   <img src="image2.png" alt="image2" height="auto" />
 
   <img src="image0.png" alt="image0" height="auto" />
