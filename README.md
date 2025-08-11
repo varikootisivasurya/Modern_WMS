@@ -4,15 +4,6 @@
   <img src="logo.png" alt="ModernWMS logo" width="200" height="auto" />
   <h1>ModernWMS</h1>
  
-
-</div>
-<div align="center">
-  <h3>
-  <a href="https://gitee.com/modernwms/ModernWMS/blob/master/README.zh_CN.md">中文文档</a>
-  </h3>
-  <h3>
-  <a href="https://modernwms.ikeyly.com">Home Page</a>
-  </h3>
 </div>
 
 # Contents
@@ -21,16 +12,12 @@
 - [Contents](#contents)
   - [Introduction](#introduction)
   - [Requirements](#requirements)
-    - [Linux OS](#linux-os)
     - [Windows OS](#windows-os)
   - [Installation](#installation)
-    - [Linux](#linux)
     - [Windows](#windows)
     - [Docker(Optional)](#dockeroptional)
   - [Usage](#usage)
-  - [Contact](#contact)
-  - [License](#license)
-  - [Donate](#donate)
+ 
 
 ## Introduction 
 
@@ -180,11 +167,3 @@
 
   <img src="image1.png" alt="image1" height="auto" />
   
-## Contact
-
-<h4>
-  <a href="https://gitee.com/modernwms/ModernWMS/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0">Report a BUG</a>
-</h4>
-<h4>
-  <a href="https://gitee.com/leucoon/vue-element-plus-admin/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0">Submit a suggestion</a>
-</h4>
