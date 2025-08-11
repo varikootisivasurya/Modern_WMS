@@ -79,12 +79,13 @@ perl
 Copy
 Edit
 http://127.0.0.1  OR  http://<your-server-ip>
-Default Login:
-📷 Screenshots
-<img src="image2.png" alt="image2" height="auto" /> <img src="image0.png" alt="image0" height="auto" /> <img src="image1.png" alt="image1" height="auto" />
 
 Username: admin
 
 Password: 1
+
+Default Login:
+📷 Screenshots
+<img src="image2.png" alt="image2" height="auto" /> <img src="image0.png" alt="image0" height="auto" /> <img src="image1.png" alt="image1" height="auto" />
 
 
