@@ -3,36 +3,8 @@
 <div align="center">
   <img src="logo.png" alt="ModernWMS logo" width="200" height="auto" />
   <h1>ModernWMS</h1>
-  <p>A simple, complete and open source warehouse management system</p>
+ 
 
-<!-- Badges -->
-[![License: Apache2.0](https://img.shields.io/badge/license-Apache2.0-orange.svg)](https://opensource.org/license/apache-2-0/)
-![Release Version (latest Version)](https://img.shields.io/github/v/release/fjykTec/ModernWMS?color=orange&include_prereleases)
-![QR Code Support](https://img.shields.io/badge/QR--Code-Support-orange.svg)
-![Docker Support](https://img.shields.io/badge/Docker-Support-orange.svg)
-![i18n Support](https://img.shields.io/badge/i18n-Support-orange.svg)
-[![MySQL8](https://img.shields.io/badge/MySQL8.0%2B-Support-orange)](https://www.mysql.com/downloads/)
-[![SQL Server](https://img.shields.io/badge/SQL%20Server2017%2B-Support-orange)](https://www.mysql.com/downloads/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL12-Support-orange)](https://www.mysql.com/downloads/)
-
-![repo size](https://img.shields.io/github/repo-size/fjykTec/ModernWMS)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/fjykTec/ModernWMS)
-<!--![Contributors](https://img.shields.io/github/contributors/fjykTec/ModernWMS?color=blue) -->
-
-![GitHub Org's stars](https://img.shields.io/github/stars/fjykTec/ModernWMS?style=social)
-![GitHub Follows](https://img.shields.io/github/followers/ModernWMS?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/fjykTec/ModernWMS?style=social)
-![GitHub Watch](https://img.shields.io/github/watchers/fjykTec/ModernWMS?style=social)
-![Gitee Stars](https://gitee.com/modernwms/ModernWMS/badge/star.svg?theme=social)
-![Gitee Forks](https://gitee.com/modernwms/ModernWMS/badge/fork.svg?theme=social)
-
-![.NET](https://img.shields.io/badge/.NET-7.0.0-green)
-![Vuetify Cli](https://img.shields.io/badge/Vuetify/cli-3.0.4-green)
-![Vue](https://img.shields.io/badge/Vue-3.2.45-green)
-![TypeScript](https://img.shields.io/badge/TypeScript-4.1.2-green)
-![VXE Table](https://img.shields.io/badge/VXETable-4.3.7-green)
-![Vite](https://img.shields.io/badge/Vite-4.0.0-green)
-![NodeJS](https://img.shields.io/badge/NodeJS-16.13.1-green)
 </div>
 <div align="center">
   <h3>
@@ -66,13 +38,7 @@
 
 ## Requirements
 
-### Linux OS
 
-+ Ubuntu 18.04(LTS),20.04(LTS),22.04(LTS)
-+ CentOS Stream 8,9
-+ RHEL 8(8.7),9(9.1)
-+ Debian 10,11
-+ openSUSE 15
 
 ### Windows OS
 
@@ -81,52 +47,7 @@
 
 ## Installation
 
-### Linux
 
-+ download the source code and compile
-  + Step 1, download the source code
-
-  ```bash
-  cd /tmp/ && wget https://gitee.com/modernwms/ModernWMS/repository/archive/master.zip
-  ```  
-
-  + Step 2, Install .NET SDK and NodeJS
-
-  ```bash
-  wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-  sudo dpkg -i packages-microsoft-prod.deb
-  sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
-  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  sudo apt install -y nodejs
-  sudo apt-get install gcc g++ make
-  sudo npm install -g yarn
-  ```  
-
-  + Step 3, compile frontend and backend
-
-  ```bash
-  sudo apt install unzip
-  cd /tmp/ && unzip master.zip && cd ./ModernWMS-master
-  mkdir -p /ModernWMS/frontend/ /ModernWMS/backend/
-  cd /tmp/ModernWMS-master/frontend/ 
-  sed -i 's#http://127.0.0.1#http://IP address#g' ./.env.production
-  yarn && yarn build && cp -rf /tmp/ModernWMS-master/frontend/dist/* /ModernWMS/frontend/
-  cd /tmp/ModernWMS-master/backend/ && sudo dotnet publish && cp -rf /tmp/ModernWMS-master/backend/ModernWMS/bin/Debug/net7.0/publish/* /ModernWMS/backend/
-  cp -rf /tmp/ModernWMS-master/backend/ModernWMS/wms.db /ModernWMS/backend/
-  ```  
-
-  + Step 4, Install Nginx
-
-  ```bash
-  cd /tmp/ && wget http://nginx.org/download/nginx-1.18.0.tar.gz 
-  tar -zxvf nginx-1.18.0.tar.gz && cd nginx-1.18.0
-  ./configure --prefix=/etc/nginx --with-http_secure_link_module --with-http_stub_status_module --with-http_realip_module --without-http_rewrite_module --without-http_gzip_module
-  make && make install
-  cp -rf /ModernWMS/frontend/* /etc/nginx/html/
-  nohup /etc/nginx/sbin/nginx -g 'daemon off;' &
-  cd /ModernWMS/backend/ && dotnet ModernWMS.dll --urls http://0.0.0.0:20011
-  ```  
-  
 ### Windows
 
 + download the source code and compile
@@ -267,15 +188,3 @@
 <h4>
   <a href="https://gitee.com/leucoon/vue-element-plus-admin/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0">Submit a suggestion</a>
 </h4>
-
-## License
-
-Distributed under the [MIT](https://opensource.org/licenses/MIT/) License. See [LICENSE.txt](https://gitee.com/modernwms/ModernWMS/blob/master/LICENSE) for more information.This must be observed.
-
-## Donate
-
-If it's helpful to you, you can donate us by alipay,by wechat. Your support will encourage us to continue creating
-
-<img src="alipay.jpg" alt="image3" height="auto" />
-<img src="wechat.jpg" alt="image4" height="auto" />
-
